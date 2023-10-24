@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppRecipe.View.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.BackButtonTitle="True">
+
+    <VerticalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+
+
+        <VerticalStackLayout
+            x:Name="Cabecalho"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+
+            <HorizontalStackLayout Margin="10,20,0,0" HorizontalOptions="Center">
+                <HorizontalStackLayout Margin="20,18">
+                    <Label Text=" Belo Horizonte | " />
+                    <Label x:Name="DataActually" Text="Ago 23 11:00 PM" />
+                </HorizontalStackLayout>
+                <Border
+                    Margin="40,0"
+                    Padding="0"
+                    BackgroundColor="#FFF5D0"
+                    StrokeShape="RoundRectangle 30">
+                    <Image
+                        Aspect="AspectFill"
+                        HeightRequest="60"
+                        Source="perfil.jpg" />
+                </Border>
+            </HorizontalStackLayout>
+            <BoxView
+                Margin="20,20"
+                HeightRequest="0.5"
+                Color="#7B7B7B" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            x:Name="Title"
+            Margin="40,0"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+
+            <Label
+                Margin="0,10"
+                FontSize="20"
+                Text="Good Morning Samuel!" />
+            <Label
+                Margin="0,5"
+                FontSize="40"
+                Text="Grab Your" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="40"
+                Text="delicious meal!" />
+
+
+            <Border
+                Margin="0,30,60,0"
+                Stroke="black"
+                StrokeShape="RoundRectangle 8"
+                StrokeThickness="0.5">
+                <Entry
+                    Margin="10,0"
+                    FontSize="Medium"
+                    MaxLength="15"
+                    Placeholder="Search product"
+                    PlaceholderColor="Black"
+                    TextColor="Black" />
+            </Border>
+
+            <HorizontalStackLayout Margin="6,40">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="14"
+                    Text="Want to repeat your last order"
+                    TextColor="Black" />
+                <Image
+                    Margin="20,0,0,0"
+                    HeightRequest="20"
+                    Source="right.svg" />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+        <ScrollView HeightRequest="500" VerticalOptions="FillAndExpand">
+            <VerticalStackLayout x:Name="Products" Margin="0,50">
+
+                <HorizontalStackLayout>
+
+
+                    <Border
+                        Margin="30,0"
+                        Padding="20"
+                        BackgroundColor="White"
+                        StrokeShape="RoundRectangle  15">
+                        <Border.Shadow>
+                            <Shadow
+                                Brush="black"
+                                Opacity="0.8"
+                                Radius="20"
+                                Offset="5,10" />
+                        </Border.Shadow>
+                        <VerticalStackLayout>
+
+                            <Image Source="image.svg" />
+                            <Label
+                                Margin="0,30"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                                Text="Carrot Cake" />
+                            <Button
+                                BackgroundColor="#AFFFA8"
+                                Clicked="OnButtonClickedCerrotCakeRecipe"
+                                FontAttributes="Bold"
+                                Text="See more"
+                                TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Border>
+
+
+                    <Border
+                        Margin="20,0"
+                        Padding="20"
+                        BackgroundColor="White"
+                        StrokeShape="RoundRectangle  15">
+                        <Border.Shadow>
+                            <Shadow
+                                Brush="black"
+                                Opacity="0.8"
+                                Radius="20"
+                                Offset="5,10" />
+                        </Border.Shadow>
+                        <VerticalStackLayout>
+
+                            <Image Source="image1.svg" />
+                            <Label
+                                Margin="0,30"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                                Text="Limon Pie" />
+                            <Button
+                                BackgroundColor="#AFFFA8"
+                                FontAttributes="Bold"
+                                Text="See more"
+                                TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Border>
+
+
+                </HorizontalStackLayout>
+
+
+                <HorizontalStackLayout>
+
+
+                    <Border
+                        Margin="30,40"
+                        Padding="20"
+                        BackgroundColor="White"
+                        StrokeShape="RoundRectangle  15">
+                        <Border.Shadow>
+                            <Shadow
+                                Brush="black"
+                                Opacity="0.8"
+                                Radius="20"
+                                Offset="5,10" />
+                        </Border.Shadow>
+                        <VerticalStackLayout>
+
+                            <Image Source="image1.svg" />
+                            <Label
+                                Margin="0,30"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                                Text="Limon Pie" />
+                            <Button
+                                BackgroundColor="#AFFFA8"
+                                FontAttributes="Bold"
+                                Text="See more"
+                                TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Border>
+
+
+                    <Border
+                        Margin="20,40"
+                        Padding="20"
+                        BackgroundColor="White"
+                        StrokeShape="RoundRectangle  15">
+                        <Border.Shadow>
+                            <Shadow
+                                Brush="black"
+                                Opacity="0.8"
+                                Radius="20"
+                                Offset="5,10" />
+                        </Border.Shadow>
+                        <VerticalStackLayout>
+
+                            <Image Source="image.svg" />
+                            <Label
+                                Margin="0,30"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"
+                                Text="Carrot Cake" />
+                            <Button
+                                BackgroundColor="#AFFFA8"
+                                FontAttributes="Bold"
+                                Text="See more"
+                                TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Border>
+
+
+                </HorizontalStackLayout>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </VerticalStackLayout>
+</ContentPage> 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppRecipe.View.Cake.CarrotCake"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Carrot Cake">
+
+    <Grid VerticalOptions="Start">
+        <Image
+            Aspect="AspectFill"
+            HeightRequest="300"
+            Source="https://assets.epicurious.com/photos/63ea6a721c1f25dbd0e37d71/16:9/w_6144,h_3456,c_limit/CarrotCake_RECIPE_020923_47144.jpg"
+            VerticalOptions="Start" />
+
+        <StackLayout>
+            <VerticalStackLayout Margin="0,300">
+                <Label Text="ola" />
+            </VerticalStackLayout>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
