@@ -31,51 +31,51 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-maccatalyst|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows10.0.19041.0|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-maccatalyst|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows10.0.19041.0|AnyCPU'">
-	  <ApplicationTitle>The Recipe</ApplicationTitle>
+	  <ApplicationTitle>Meal</ApplicationTitle>
 	  <ApplicationId>com.samuelflm.apprecipe</ApplicationId>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#f27200" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#f27200" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -96,6 +96,7 @@
 	  <None Remove="Resources\Images\perfil.jpg" />
 	  <None Remove="Resources\Images\right.svg" />
 	  <None Remove="Resources\Images\search.svg" />
+	  <None Remove="Resources\Images\youtube.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -106,6 +107,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Pie\Limon.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Youtube.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

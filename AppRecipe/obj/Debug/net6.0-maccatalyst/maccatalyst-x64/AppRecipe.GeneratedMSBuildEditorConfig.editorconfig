@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppRecipe
+build_property.ProjectDir = C:\Users\Lazer\OneDrive\Área de Trabalho\AppRecipe\AppRecipe\
+
+[C:/Users/Lazer/OneDrive/Área de Trabalho/AppRecipe/AppRecipe/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppRecipe.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Lazer/OneDrive/Área de Trabalho/AppRecipe/AppRecipe/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppRecipe.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Lazer/OneDrive/Área de Trabalho/AppRecipe/AppRecipe/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppRecipe.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Lazer/OneDrive/Área de Trabalho/AppRecipe/AppRecipe/View/Cake/CarrotCake.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppRecipe.View.Cake.CarrotCake.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Cake\CarrotCake.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Cake\CarrotCake.xaml
+
+[C:/Users/Lazer/OneDrive/Área de Trabalho/AppRecipe/AppRecipe/View/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppRecipe.View.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml
+
+[C:/Users/Lazer/OneDrive/Área de Trabalho/AppRecipe/AppRecipe/View/Pie/Limon.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppRecipe.View.Pie.Limon.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Pie\Limon.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Pie\Limon.xaml
+
+[C:/Users/Lazer/OneDrive/Área de Trabalho/AppRecipe/AppRecipe/View/Youtube.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppRecipe.View.Youtube.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Youtube.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Youtube.xaml

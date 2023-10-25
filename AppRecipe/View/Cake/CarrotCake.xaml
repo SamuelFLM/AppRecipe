@@ -3,7 +3,7 @@
     x:Class="AppRecipe.View.Cake.CarrotCake"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Carrot Cake">
+    NavigationPage.BackButtonTitle="True">
 
     <Grid VerticalOptions="Start">
         <Image
@@ -12,10 +12,431 @@
             Source="https://assets.epicurious.com/photos/63ea6a721c1f25dbd0e37d71/16:9/w_6144,h_3456,c_limit/CarrotCake_RECIPE_020923_47144.jpg"
             VerticalOptions="Start" />
 
+
         <StackLayout>
-            <VerticalStackLayout Margin="0,300">
-                <Label Text="ola" />
-            </VerticalStackLayout>
+            <ScrollView Margin="0,300" HeightRequest="505">
+
+                <VerticalStackLayout x:Name="ingredients" BackgroundColor="White">
+                    <Label
+                        Margin="0,40,0,20"
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        HorizontalOptions="Center"
+                        Text="Ingredients"
+                        TextColor="#f27200"
+                        TextTransform="Uppercase" />
+
+                    <BoxView
+                        Margin="20,0"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5" />
+
+                    <Label
+                        Margin="30,20"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Text="Was"
+                        TextColor="#fcd000" />
+
+                    <HorizontalStackLayout Margin="40,20">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            Text="•   2"
+                            TextColor="Orange" />
+                        <Label
+                            Margin="10,0"
+                            FontSize="Medium"
+                            Text="carrots, peeled and coarsely chopped" />
+                    </HorizontalStackLayout>
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   1"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="cup of Qualy Aéra Margarine" />
+                        </HorizontalStackLayout>
+                        <Label
+                            Margin="40,0"
+                            FontSize="Medium"
+                            Text="(plus a little to grease the pan)" />
+
+                    </VerticalStackLayout>
+
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   3"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="eggs" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   1½"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="cup of sugar" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   2"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="cups of wheat flour" />
+                        </HorizontalStackLayout>
+                        <Label
+                            Margin="40,0"
+                            FontSize="Medium"
+                            Text="(plus a little to flour the pan)" />
+
+                    </VerticalStackLayout>
+
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   1"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="tablespoon of baking powder" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <Label
+                        Margin="30,20"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Text="Coverage"
+                        TextColor="#fcd000" />
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   3"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="tablespoon of Qualy Aera Margarine" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   3"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="tablespoon of sugar" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   2"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="tablespoon soluble chocolate powder" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Margin="40,20">
+                        <HorizontalStackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="•   ½"
+                                TextColor="Orange" />
+                            <Label
+                                Margin="10,0"
+                                FontSize="Medium"
+                                Text="cup (tea) milk" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout>
+                        <Label
+                            Margin="0,40,0,20"
+                            FontAttributes="Bold"
+                            FontSize="Title"
+                            HorizontalOptions="Center"
+                            Text="Method of preparation"
+                            TextColor="#f27200"
+                            TextTransform="Uppercase" />
+
+                        <BoxView
+                            Margin="20,0"
+                            BackgroundColor="LightGray"
+                            HeightRequest="0.5" />
+                    </VerticalStackLayout>
+
+                    <Label
+                        Margin="30,20"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Text="Was"
+                        TextColor="#fcd000" />
+
+                    <VerticalStackLayout Margin="40,20,0,5">
+                        <HorizontalStackLayout>
+                            <Border
+                                BackgroundColor="#f27200"
+                                Stroke="#f27200"
+                                StrokeShape="RoundRectangle 60">
+                                <Label
+                                    Margin="10,0"
+                                    Padding="0,3"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="1"
+                                    TextColor="White" />
+                            </Border>
+                            <Label
+                                Margin="10,5"
+                                FontSize="16"
+                                Text="In a blender, puree carrots, margarine, and eggs" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        Margin="85,0,10,20"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5"
+                        Opacity="0.5" />
+
+
+                    <VerticalStackLayout Margin="40,20,0,5">
+                        <HorizontalStackLayout>
+                            <Border
+                                BackgroundColor="#f27200"
+                                Stroke="#f27200"
+                                StrokeShape="RoundRectangle 60">
+                                <Label
+                                    Margin="10,0"
+                                    Padding="0,3"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="2"
+                                    TextColor="White" />
+                            </Border>
+                            <Label
+                                Margin="10,5"
+                                FontSize="16"
+                                Text="In a bowl, put the carrot cream and add the" />
+                        </HorizontalStackLayout>
+
+                        <Label
+                            Margin="45,5"
+                            FontSize="16"
+                            Text="sifted sugar and flour and mix well" />
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        Margin="85,0,10,20"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5"
+                        Opacity="0.5" />
+
+
+                    <VerticalStackLayout Margin="40,20,0,5">
+                        <HorizontalStackLayout>
+                            <Border
+                                BackgroundColor="#f27200"
+                                Stroke="#f27200"
+                                StrokeShape="RoundRectangle 60">
+                                <Label
+                                    Margin="10,0"
+                                    Padding="0,3"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="3"
+                                    TextColor="White" />
+                            </Border>
+                            <Label
+                                Margin="10,5"
+                                FontSize="16"
+                                Text="Sir in the yeast and mix a little more" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        Margin="85,0,10,20"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5"
+                        Opacity="0.5" />
+
+
+                    <VerticalStackLayout Margin="40,20,0,5">
+                        <HorizontalStackLayout>
+                            <Border
+                                BackgroundColor="#f27200"
+                                Stroke="#f27200"
+                                StrokeShape="RoundRectangle 60">
+                                <Label
+                                    Margin="10,0"
+                                    Padding="0,3"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="4"
+                                    TextColor="White" />
+                            </Border>
+                            <Label
+                                Margin="10,5"
+                                FontSize="16"
+                                Text="Pour the dough into a greased and floured" />
+                        </HorizontalStackLayout>
+                        <Label
+                            Margin="45,5"
+                            FontSize="16"
+                            Text="hole pan in the middle and bake in a medium oven for approximately 45 minutes." />
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        Margin="85,0,10,20"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5"
+                        Opacity="0.5" />
+
+                    <Label
+                        Margin="30,20"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Text="Coverage"
+                        TextColor="#fcd000" />
+
+                    <VerticalStackLayout Margin="40,20,0,5">
+                        <HorizontalStackLayout>
+                            <Border
+                                BackgroundColor="#f27200"
+                                Stroke="#f27200"
+                                StrokeShape="RoundRectangle 60">
+                                <Label
+                                    Margin="10,0"
+                                    Padding="0,3"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="1"
+                                    TextColor="White" />
+                            </Border>
+                            <Label
+                                Margin="10,5"
+                                FontSize="16"
+                                Text="In a saucepan, place all the topping ingredients" />
+                        </HorizontalStackLayout>
+                        <Label
+                            Margin="45,5"
+                            FontSize="16"
+                            Text="and cook, mixing continuosly, until it forms a smooth topping." />
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        Margin="85,0,10,20"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5"
+                        Opacity="0.5" />
+
+
+                    <VerticalStackLayout Margin="40,20,0,5">
+                        <HorizontalStackLayout>
+                            <Border
+                                BackgroundColor="#f27200"
+                                Stroke="#f27200"
+                                StrokeShape="RoundRectangle 60">
+                                <Label
+                                    Margin="10,0"
+                                    Padding="0,3"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="2"
+                                    TextColor="White" />
+                            </Border>
+                            <Label
+                                Margin="10,5"
+                                FontSize="16"
+                                Text="Turn out the cake and cover with the frosting." />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <BoxView
+                        Margin="85,0,10,20"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5"
+                        Opacity="0.5" />
+
+
+                    <Label
+                        Margin="0,40,0,20"
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        HorizontalOptions="Center"
+                        Text="see the recipe on youtube"
+                        TextColor="#f27200"
+                        TextTransform="Uppercase" />
+
+                    <BoxView
+                        Margin="55,0"
+                        BackgroundColor="LightGray"
+                        HeightRequest="0.5"
+                        Opacity="0.5" />
+
+                    <ImageButton
+                        Margin="50,5"
+                        BackgroundColor="White"
+                        Clicked="OnButtonClickedYoutube"
+                        HeightRequest="70"
+                        HorizontalOptions="Center"
+                        Source="youtube.svg"
+                        WidthRequest="60" />
+
+
+                </VerticalStackLayout>
+
+
+
+
+
+            </ScrollView>
         </StackLayout>
 
     </Grid>

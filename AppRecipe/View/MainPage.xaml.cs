@@ -8,6 +8,8 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
         NavigationPage.SetHasNavigationBar(this, false);
+        DateTime data = DateTime.Now;
+        DataActually.Text = data.ToString("D");
     }
 
     private void OnButtonClickedCerrotCakeRecipe(object sender, EventArgs e)

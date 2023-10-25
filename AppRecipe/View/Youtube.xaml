@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppRecipe.View.Youtube"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <WebView
+            Grid.Row="1"
+            HorizontalOptions="FillAndExpand"
+            Source="https://www.youtube.com/watch?v=6vtWffXzOsQ"
+            VerticalOptions="FillAndExpand" />
+    </Grid>
+</ContentPage>
